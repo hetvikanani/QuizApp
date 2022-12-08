@@ -1,18 +1,82 @@
 const quizData = [
   {
-    que: "What is National bird of India?",
-    a: "Peacock",
-    b: "Swan",
-    c: "Sparrow",
-    d: "Hen",
+    que: "Who is the Father of our Nation?",
+    a: "Mahatma Gandhi",
+    b: "Rajendra Prasad",
+    c: "Homi Bhabha",
+    d: "Dr. Rajendra Prasad",
     ans: "a",
   },
   {
-    que: "What is National aniaml of India",
-    a: "Elephant",
-    b: "Tiger",
-    c: "Lion",
+    que: "Who was the first Prime Minister of India?",
+    a: "Sardar Patel",
+    b: "Lala Lajpat Rai",
+    c: "Jawaharlal Nehru",
+    d: "APJ Abdul Kalam",
+    ans: "c",
+  },
+  {
+    que: "Who invented Computer?",
+    a: "John Dalton",
+    b: "Charles Babbage",
+    c: "Georg Simon Ohm",
+    d: "John Dalton",
+    ans: "b",
+  },
+  {
+    que: "Brain of computer is?",
+    a: "KeyBoard",
+    b: "Mouse",
+    c: "Monitor",
+    d: "CPU",
+    ans: "d",
+  },
+  {
+    que: "India lies in which continent?",
+    a: "Africa",
+    b: "Asia",
+    c: "Antarctica",
+    d: "Europe",
+    ans: "b",
+  },
+  {
+    que: "Which is the longest river on the earth?",
+    a: "Amazon River",
+    b: "Mekong River",
+    c: "Congo River",
+    d: "Nile",
+    ans: "d",
+  },
+  {
+    que: "Gir National Park in Gujarat is famous for?",
+    a: "Lion",
+    b: "Elephant",
+    c: "Tiger",
     d: "Zibra",
+    ans: "a",
+  },
+  {
+    que: "Smallest state of India is?",
+    a: "Goa",
+    b: "Mizoram",
+    c: "Sikkim ",
+    d: "Tripura",
+    ans: "a",
+  },
+  {
+    que: " Fastest animal on earth is?",
+    a: "Lion",
+    b: "Tiger",
+    c: "Cheetah",
+    d: "Zibra",
+    ans: "c",
+  },
+  {
+    que: "National Tree of India is? ",
+    a: "Neem",
+    b: "Amla",
+    c: "Banyan",
+    d: "Peepal",
     ans: "c",
   },
 ];
@@ -69,7 +133,11 @@ submit.addEventListener("click", () => {
       //   alert(score);
       document.querySelector(
         ".quiz-container"
-      ).innerHTML = `Congratulation your score is ${score}`;
+      ).innerHTML = `<h3>Congratulation your score is ${score}/${quizData.length}</h3>
+
+      <button onClick="location.reload()">Reload</button>
+      
+      `;
     } else {
       load();
     }
